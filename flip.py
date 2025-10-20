@@ -1,11 +1,11 @@
 import cv2
-from utils import load_image_from_web, show_image
+from utils import load_image, show_image
 
 
 print("--- Exercise 2: Flip (Mirroring) ---")
 
 image_url = "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-original = load_image_from_web(image_url)
+original = load_image(image_url)
 
 if original is not None:
     show_image("Original", original)
